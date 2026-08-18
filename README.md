@@ -200,3 +200,188 @@ Traditional machine learning algorithms such as Logistic Regression, Support Vec
 │
 └── README.md
 ```
+## Setup and Execution
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/kundanamani-23/KLH-CSE-2026-27-2420030558-ComplaintManagement
+cd KLH-CSE-2026-27-2420030558-ComplaintManagement
+```
+
+### 2. Create a Virtual Environment
+
+A virtual environment is used to keep the project's Python libraries separate from other Python projects on the system.
+
+Create the virtual environment using:
+
+
+```bash
+python -m venv venv
+```
+
+3. Activate the Virtual Environment
+
+For Windows, activate the virtual environment using:
+
+```bash
+venv\Scripts\activate
+```
+
+After activation, the terminal will show (venv) before the command line.
+
+4. Install Required Libraries
+
+Install the required Python libraries using:
+
+```bash
+pip install pandas
+pip install torch
+pip install transformers
+pip install flask
+pip install scikit-learn
+pip install mysql-connector-python
+```
+
+5. Prepare the Dataset
+
+Download the required dataset from the official source and place it according to the instructions provided in the data/ folder.
+
+6. Train the BERT Model
+
+Run the model training script using:
+```bash
+python src/model/train.py
+```
+7. Run the Flask Application
+
+Start the web application using:
+```bash
+python src/backend/app.py
+```
+8. Open the Application
+
+After starting the Flask application, open the local URL shown in the terminal. Usually:
+```bash
+http://127.0.0.1:5000/
+```
+
+## Current Phase Status
+
+**Current Phase:** Phase 1 – Project Selection, Literature Survey and Dataset Study
+
+### Completed
+
+- [x] Project selection
+- [x] Project title
+- [x] Problem statement
+- [x] Initial objectives
+- [x] Initial dataset study
+- [x] Initial project workflow
+- [x] Technology selection
+- [x] Complete 10-paper literature survey
+- [x] Identify limitations of the 10 papers
+- [x] Select 3 suitable datasets
+- [x] Compare the selected datasets
+- [x] Finalize the dataset and model approach
+
+### In Progress
+- [ ] Dataset preprocessing
+- [ ] BERT model development
+- [ ] Model evaluation
+
+### Upcoming
+
+- [ ] Flask website development
+- [ ] MySQL integration
+- [ ] Business Rule Engine
+- [ ] Customer module
+- [ ] Employee module
+- [ ] Administrator module
+- [ ] Testing
+- [ ] Final documentation
+- [ ] Deployment
+
+## Project Plan
+
+### Phase 1 – Literature Survey and Dataset Study
+
+- Study 10 research papers related to customer complaint classification, banking NLP, BERT, and customer support.
+- Identify the methods and algorithms used in each paper.
+- Identify the limitations of the existing studies.
+- Identify and compare the datasets used in the selected papers.
+- Select 3 suitable datasets for the project.
+
+### Phase 2 – Dataset Collection and Preprocessing
+
+- Collect the selected datasets.
+- Identify the input (X) and output (Y) features.
+- Clean and prepare the data.
+- Handle missing or unnecessary data.
+- Prepare the datasets for model training.
+
+### Phase 3 – BERT Model Development
+
+- Load the pre-trained BERT model.
+- Tokenize the complaint text.
+- Fine-tune BERT using the prepared data.
+- Train and test the model.
+- Evaluate the model using suitable performance measures.
+
+### Phase 4 – Flask Web Application
+
+- Develop the Customer module.
+- Develop the Employee module.
+- Develop the Administrator module.
+- Connect the BERT model with the web application.
+
+### Phase 5 – MySQL Integration
+
+- Create the required database tables.
+- Store customer information.
+- Store employee information.
+- Store complaint details.
+- Store ticket, prediction, priority, and status information.
+
+### Phase 6 – Business Rule Engine
+
+- Generate a unique Ticket ID.
+- Determine complaint priority.
+- Select the appropriate department.
+- Assign an employee.
+- Determine the expected response time.
+
+### Phase 7 – Testing and Evaluation
+
+- Test the BERT classification model.
+- Test the web application.
+- Test database operations.
+- Test complaint routing and employee assignment.
+- Evaluate the overall system.
+
+### Phase 8 – Documentation and Final Deployment
+
+- Complete the project report.
+- Update project documentation.
+- Prepare the final presentation.
+- Perform final system testing.
+- Deploy the completed system.
+
+## Project Outcome
+
+The expected outcome is an AI-powered banking customer complaint management system that uses BERT to classify customer complaints and supports the complaint handling process from submission to resolution.
+
+The system will:
+
+- Automatically classify customer complaints.
+- Predict Product, Sub-product, Issue, and Sub-issue.
+- Generate a unique Ticket ID.
+- Automatically determine complaint priority.
+- Assign the complaint to the appropriate department.
+- Assign the complaint to an employee.
+- Store complaint and ticket details in MySQL.
+- Allow customers to track their complaint status.
+- Allow employees to update and resolve assigned complaints.
+- Allow administrators to manage users, employees, departments, complaints, and system analytics.
+
+The project aims to reduce manual effort, improve complaint classification and routing, reduce delays, and provide a better complaint management experience.
